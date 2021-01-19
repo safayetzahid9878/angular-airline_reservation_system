@@ -1,0 +1,171 @@
+<div class="container-fluid">
+  <div class="row">
+
+    <form #ticketForm="ngForm" id="login-form" class="form" method="post" action="">
+
+    <div class="col-6" style="float: left;">
+
+      <h2 class="form-control-lg text-center">Book Ticket</h2>
+
+        From : <select class="form-control" id="sel2" name="from" ngModel>
+          <optgroup *ngFor="let ac of formdata">
+            <option value="{{ac.source}}">{{ac.source}}</option>
+          </optgroup>
+        </select><br>
+
+        TO : <select class="form-control" id="sel2" name="to" ngModel>
+          <optgroup *ngFor="let bc of formdata">
+            <option value="{{bc.departure}}">{{bc.departure}}</option>
+          </optgroup>
+        </select><br>
+
+        Class : <select class="form-control" id="sel2" name="class" ngModel>
+          <optgroup *ngFor="let b of dataClass">
+            <option value="{{b.class}}">{{b.class}}</option>
+          </optgroup>
+        </select><br>
+
+        AirName : <select class="form-control" id="sel1" name="airname" ngModel>
+          <optgroup *ngFor="let a of alldata">
+            <option value="{{a.airname}}">{{a.airname}}</option>
+          </optgroup>
+        </select><br>
+
+       
+    </div>
+
+    <div class="col-6 bg-light" style="float: left;">
+           
+       <div class="form-group pl-5 pt-5">
+        <div class="row">
+        <div class="col-lg-10 py-3" >          
+          Date :  <input type="datetime-local" name="date" ngModel/>
+          
+        </div><br>
+
+        <div class="col-lg-10 py-3">               
+          Price :  <input type="number" value="0" name="price" ngModel/>
+        </div>
+
+        <div class="col-lg-10 py-3" >               
+          Seats :  <input type="number" value="0" name="seats" ngModel/>
+        </div><br>
+
+
+        <div class="col-lg-10 py-3">               
+          Seat Number :  <input type="text" name="seatNumber" ngModel/>
+        </div>
+
+        <div class="col-lg-10 py-3"> 
+
+        <button type="button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;"  (click)="ticketBook(ticketForm.value)">BookTicket</button>
+        <!--    -->
+
+      </div>
+      </div>
+        </div>
+    </div>
+  </form>
+
+  </div>
+</div>
+
+<!--...................Modal .....................-->
+
+<!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button> -->
+
+<div id="id01" class="modal">
+    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+        title="Close Modal">&times;</span>
+        
+    <form class="modal-content" action="/action_page.php">
+        <div class="container">
+           
+          <div class="container-fluid">
+	<div class="row bg-light">
+    <div id="invoice">  
+      <div class="invoice overflow-auto">
+          <div style="min-width: 600px">
+             
+            <header>
+              <div class="row">
+                 
+                  <div class="col company-details">
+                      <h2 class="name">
+                          <a target="_blank" href="https://lobianijs.com">
+                          Safayet Zahid
+                          </a>
+                      </h2>
+                      <div>455 Foggy Heights, AZ 85004, US</div>
+                      <div>(123) 456-789</div>
+                      <div>company@example.com</div>
+                  </div>
+              </div>
+          </header>
+
+              <main>
+              
+                  <div class="card" style="width: 32rem;" *ngFor="let a of ticketData">
+  
+                    <div class="card-body">
+                      <p class="card-title"> <strong> Air Name : {{a.airname}}</strong>
+                      <p class="card-text"><strong>Destination : {{a.from}} to {{a.to}}</strong>
+                        <p class="card-text"><strong>Category : {{a.class}}</strong>
+                        <p class="card-text"><strong>Price : {{a.price * a.seats}}</strong>
+                        <p class="card-text"><strong>Date : {{a.date}} </strong>
+                        <p class="card-text"><strong>Ticket Number : {{a.seatNumber}}  </strong> 
+                          
+                      </p>
+                      
+                    </div>
+                  </div>
+                  
+                  <div class="thanks">Thank you!</div>
+                  
+              </main>
+              
+          </div>
+          
+          
+      </div>
+      
+  </div>
+  
+  <!-- <script>
+  
+  $('#printInvoice').click(function(){
+              Popup($('.invoice')[0].outerHTML);
+              function Popup(data) 
+              {
+                  window.print();
+                  return true;
+              }
+          });
+  </script>     -->
+        
+
+	</div>
+</div>
+
+
+
+            <div class="clearfix">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancel</button>
+                <button type="submit" onclick="window.print()" class="signupbtn">Print</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>

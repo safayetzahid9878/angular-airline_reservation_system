@@ -1,0 +1,29 @@
+<div id="container">
+  <div class="left pt-5">
+
+    <button type="button" class="btn btn-primary btn-lg btn-block" [routerLink]="['/mcust/addPlane']">AddPlane</button>
+<br>  
+
+<button type="button" class="btn btn-primary btn-lg btn-block" [routerLink]="['/mcust/planeDetails']">PlaneDetails</button>
+<br>  
+
+<button type="button" class="btn btn-primary btn-lg btn-block" [routerLink]="['/mcust/createAir']">Create Air</button>
+<br>
+
+<button type="button" class="btn btn-primary btn-lg btn-block" [routerLink]="['/mcust/airdetails']">Airdetails</button>
+
+<br>
+
+<button type="button" class="btn btn-primary btn-lg btn-block" [routerLink]="['/mcust/addLocation']">AddLocation</button>
+<br>
+
+<button type="button" class="btn btn-primary btn-lg btn-block" [routerLink]="['/mcust/addClass']">AddClass</button>
+<br>
+
+  </div>
+
+  <div class="right">
+    <router-outlet></router-outlet>
+
+  </div>
+</div>

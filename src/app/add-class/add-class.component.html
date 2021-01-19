@@ -1,0 +1,80 @@
+<!-- <div class="container contact">
+	<div class="row">
+		<div class="col-md-2">
+			
+		</div>
+		<div class="col-md-8">
+			<div class="contact-form">
+				<h1 class="text-center">Add location Details</h1>
+			<form  #locationForm="ngForm">
+
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="fname">Class Code:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Class Code" name="classCode" ngModel>
+				  </div>
+				</div>
+				<div class="form-group">
+				<label for="sel3">Class (select one):</label>
+                  <select class="form-control" id="sel1" name="class" ngModel>
+                    <option>Business</option>
+                    <option>Economy</option>
+                    <option>FirstClass</option>
+                    <option>Premium Economy</option>
+                  </select><br>
+				</div>
+				<div class="form-group">        
+				  <div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-default" (click)="createClass(classForm.value)">Add Class</button>
+				  </div>
+				</div>
+
+				  </div>
+				</div>
+
+				<div class="col-md-2">
+			
+				</div>
+			</div>
+		</div>
+ -->
+
+
+ 
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-2">
+
+        </div>
+
+        <div class="col-8 bg-light">
+            <h2 class="form-control-range">Create Class</h2>
+            
+            <form  #classForm="ngForm" id="login-form" class="form" method="post" action="">
+    
+                Class Code : <input type="text" class="input-group" name="classCode" id="" ngModel><br>
+
+               
+				<label for="sel1">Class (select one):</label>
+				<select class="form-control" id="sel1" name="class" ngModel>
+				  <option>Business</option>
+				  <option>Economy</option>
+				  <option>FirstClass</option>
+				  <option>Premium Economy</option>
+				</select><br>
+
+				
+				<button type="button" (click)="createClass(classForm.value)" class="btn btn-outline-primary"
+				value="AddPlane">CreatClass</button>
+               
+            </form>
+    
+        </div>
+
+        <div class="col-2">
+            
+        </div>
+        
+    </div>
+    </div>

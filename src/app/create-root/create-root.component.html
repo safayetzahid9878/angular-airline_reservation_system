@@ -1,0 +1,51 @@
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-2">
+
+        </div>
+
+        <div class="col-8 bg-light">
+            <h2 class="form-control-range">Create Route</h2>
+            
+            <form  #rootForm="ngForm" id="login-form" class="form" method="post" action="">
+    
+                Route Code : <input type="text" class="input-group" name="rootcode" id="" ngModel><br>
+
+                Alliances : <input type="text" class="input-group" name="place" id="" ngModel><br>
+
+               
+                    <label for="sel1" >Source (select one):</label>
+                    <select class="form-control" id="sel1" name="source" ngModel>
+                      <option>Bangladesh</option>
+                      <option>UK</option>
+                      <option>Canada</option>
+                      <option>France</option>
+                      <option>Itali</option>
+                      <option>New york</option>
+                    </select><br>
+
+                    <label for="sel2">Departure (select one):</label>
+                    <select class="form-control" id="sel1" name="departure" ngModel>
+                      <option>New york</option>
+                      <option>Itali</option>
+                      <option>France</option>
+                      <option>Canada</option>
+                      <option>UK</option>
+                      <option>Bangladesh</option>
+                    </select><br>
+                                
+                <button type="button" class="btn btn-outline-primary" value="AddPlane" (click)="createRoute(rootForm.value)">AddPlane</button>
+
+               
+            </form>
+    
+        </div>
+
+        <div class="col-2">
+            
+        </div>
+        
+    </div>
+    </div>

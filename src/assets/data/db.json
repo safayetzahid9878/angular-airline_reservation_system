@@ -1,0 +1,172 @@
+{
+  "admin": [
+    {
+      "name": "Safayet",
+      "id": 1
+    },
+    {
+      "name": "Safayet",
+      "id": 2
+    },
+    {
+      "name": "Safayet",
+      "username": "username",
+      "password": "1234",
+      "id": 3
+    }
+  ],
+  "createair": [
+    {
+      "airname": "Air Bangla",
+      "airRout": "IATA",
+      "model": "A6002",
+      "devision": "First Division",
+      "id": 1
+    },
+    {
+      "airname": "Singapur Air",
+      "airRout": "ICAO",
+      "model": "N9406",
+      "devision": "First Division",
+      "id": 2
+    },
+    {
+      "airname": "Air Europa",
+      "airRout": "UX",
+      "model": "AT9",
+      "devision": "Second Division",
+      "id": 3
+    },
+    {
+      "airname": "Hainan Airlines.",
+      "airRout": "IATA",
+      "model": " 737",
+      "devision": "Second Division",
+      "id": 4
+    }
+  ],
+  "addplane": [
+    {
+      "plname": "Airbus",
+      "engine": "4",
+      "model": "A220",
+      "countri": "Canada",
+      "id": 1
+    },
+    {
+      "plname": "Boeing",
+      "engine": "2",
+      "model": " 737",
+      "countri": "USA",
+      "id": 2
+    },
+    {
+      "plname": "Embraer ",
+      "engine": "4",
+      "model": "E-Jet family",
+      "countri": "Brazil",
+      "id": 3
+    }
+  ],
+  "route": [
+    {
+      "rootcode": "A3",
+      "place": "Star Aliense",
+      "source": "India",
+      "departure": "Itali",
+      "id": 1
+    },
+    {
+      "rootcode": "00213.AP",
+      "place": "Sky Team",
+      "source": "Bangladesh",
+      "departure": "New york",
+      "id": 2
+    },
+    {
+      "rootcode": "006.WP.25",
+      "place": "Sky Aliense",
+      "source": "UK",
+      "departure": "Itali",
+      "id": 3
+    },
+    {
+      "rootcode": "RRTA",
+      "place": "One World",
+      "source": "Canada",
+      "departure": "UK",
+      "id": 4
+    },
+    {
+      "rootcode": "A3",
+      "place": "Sky Team",
+      "source": "France",
+      "departure": "Canada",
+      "id": 5
+    }
+  ],
+  "location": [
+    {
+      "latitude": "27.2046° N",
+      "longitude": " 77.4977° E",
+      "place": "Dhaka",
+      "id": 1
+    }
+  ],
+  "class": [
+    {
+      "classCode": "009A",
+      "class": "Premium Economy",
+      "id": 1
+    },
+    {
+      "classCode": "009B",
+      "class": "Business",
+      "id": 2
+    },
+    {
+      "classCode": "4260AV",
+      "class": "Economy",
+      "id": 3
+    },
+    {
+      "classCode": "0022C",
+      "class": "FirstClass",
+      "id": 4
+    },
+    {
+      "classCode": "4260AV",
+      "class": "FirstClass",
+      "id": 5
+    },
+    {
+      "classCode": "",
+      "class": "FirstClass",
+      "id": 6
+    }
+  ],
+  "bookticket": [
+    {
+      "from": "Bangladesh",
+      "to": "New york",
+      "class": "Premium Economy",
+      "airname": "Singapur Air",
+      "date": "2020-12-09T04:01",
+      "seats": 2,
+      "price": 50000,
+      "seatNumber": "A1",
+      "id": 1
+    },
+    {
+      "from": "",
+      "to": "",
+      "class": "",
+      "airname": "",
+      "date": "",
+      "seats": 2,
+      "price": 2,
+      "seatNumber": "A3",
+      "id": 2
+    }
+  ]
+}

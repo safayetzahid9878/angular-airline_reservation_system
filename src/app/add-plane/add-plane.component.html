@@ -1,0 +1,99 @@
+
+<div class="container-fluid">
+	<div class="row bg-light">
+
+		<div class="col-md-2">
+			
+		</div>
+
+		<div class="col-8">
+			<h2 class="text-center">Add Plane Detais</h2>
+
+			<form #planeForm="ngForm">
+
+				AirPlane Name : <input type="text" class="input-group" name="plname" id="" [(ngModel)]="planeObj.plname"><br>
+
+				Engeen : <input type="text" class="input-group" name="engine" id="" [(ngModel)]="planeObj.engine"><br>
+
+				Model : <input type="text" class="input-group" name="model" id="" [(ngModel)]="planeObj.model"><br>
+
+				Country : <input type="text" class="input-group" name="countri" id=""
+					[(ngModel)]="planeObj.countri"><br>
+
+				<!-- <input type="submit" class="bg-info" > -->
+				<button type="button" (click)="planeSub(planeForm.value)" class="btn btn-outline-primary"
+					value="AddPlane">AddPlane</button>
+
+				
+				{{messege}}
+
+			</form>
+
+		</div>
+		
+		<div class="col-md-2">
+			
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<!-- <div class="container-fluid">
+	<div class="row bg-light">
+		<div class="col-4">
+			<h2 class="text-center">Add Plane Detais</h2>
+
+			<form #planeForm="ngForm">
+
+				AirPlane Name : <input type="text" class="input-group" name="plname" id="" [(ngModel)]="planeObj.plname"><br>
+
+				Engeen : <input type="text" class="input-group" name="engine" id="" [(ngModel)]="planeObj.engine"><br>
+
+				Model : <input type="text" class="input-group" name="model" id="" [(ngModel)]="planeObj.model"><br>
+
+				Country : <input type="text" class="input-group" name="countri" id=""
+					[(ngModel)]="planeObj.countri"><br>
+
+				<input type="submit" class="bg-info" >
+				<button type="button" (click)="planeSub(planeForm.value)" class="btn btn-outline-primary"
+					value="AddPlane">AddPlane</button>
+
+				<button type="button" (click)="updatePlane(planeForm.value)" class="btn btn-outline-primary"
+					value="AddPlane">Update</button>
+				{{messege}}
+
+			</form>
+
+		</div>
+		<div class="col-8">
+			<table class="table">
+				<thead>
+					<tr class="font-weight-bold">
+						<td>Name</td>
+						<td>Engeen</td>
+						<td>Model</td>
+						<td>Country</td>
+						<th>Edit</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+
+					<tr *ngFor="let a of allData">
+						<td>{{a.plname}}</td>
+						<td>{{a.engine}}</td>
+						<td>{{a.model}}</td>
+						<td>{{a.countri}}</td>
+						<td><button (click)="editPlane(a)">Edit</button></td>
+						<td><button (click)="deletePlane(a)">Delete</button></td>
+					</tr>
+
+				</tbody>
+			</table>
+
+		</div>
+	</div>
+</div> -->

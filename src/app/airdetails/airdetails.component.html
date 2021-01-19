@@ -1,0 +1,44 @@
+
+<div class="container-fluid">
+	<div class="row bg-light">
+
+		<div class="col-md-2">
+			
+		</div>
+
+<div class="col-md-8">
+
+  <div class="contact-info">
+    <h2 class="form-control-lg text-center">Add Air Detais</h2>
+    <table class="table table-bordered">
+    <thead>
+      <tr class="font-weight-bold">
+        <td>AirName</td>
+        <td>AirRoot</td>
+        <td>Model</td>
+        <td>Devision</td>
+        <!-- <th>Edit</th> -->
+           <th>Delete</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let a of allData">
+        <td>{{a.airname}}</td>
+        <td>{{a.airRout}}</td>
+        <td>{{a.model}}</td>
+        <td>{{a.devision}}</td>
+        <!-- <td><button (click)="editAir(a)">Edit</button></td> -->
+        <td><button (click)="deleteAir(a)">Delete</button></td>
+        </tr>
+
+    </tbody>
+
+  </table>
+  </div>
+</div> 
+<div class="col-md-2">
+			
+</div>
+</div>
+</div> 

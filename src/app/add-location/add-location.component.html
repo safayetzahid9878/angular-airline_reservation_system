@@ -1,0 +1,52 @@
+<div class="container contact">
+	<div class="row">
+
+		<div class="col-md-2">
+			
+		</div>
+
+		<div class="col-md-8">
+			<div class="contact-form">
+				<h1 class="text-center">Add location Details</h1>
+				
+				<form  #locationForm="ngForm" id="login-form" class="form" method="post" action="">
+				
+				<div class="form-group">
+
+				  <label class="control-label col-sm-2" for="fname">Latitude:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="fname" placeholder="Latitude" name="latitude" ngModel>
+				  </div>
+				</div>
+				<div class="form-group">
+				  <label class="control-label col-sm-2" for="lname">Longitude:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="lname" placeholder="Longitude" name="longitude" ngModel>
+				  </div>
+				</div>
+        	<div class="form-group">
+				  <label class="control-label col-sm-2" for="lname">Place:</label>
+				  <div class="col-sm-10">          
+					<input type="text" class="form-control" id="lname" placeholder="Place" name="place" ngModel>
+				  </div>
+				</div>
+        
+				<div class="form-group">   
+
+				  <div class="col-sm-offset-2 col-sm-10">
+
+		<button type="submit" class="btn btn-default" (click)="createLocation(locationForm.value)">AddLocation</button>
+				
+				  </div>
+				</div>
+
+			</form>
+			</div>
+		</div>
+
+		<div class="col-md-2">
+			
+		</div>
+
+	</div>
+</div>

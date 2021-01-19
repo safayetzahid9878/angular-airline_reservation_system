@@ -1,0 +1,52 @@
+
+
+<div class="container contact">
+	<div class="row">
+
+  <div class="col-2">
+
+
+  </div>
+
+  <div class="col-8">
+    <h2 class="text-center">Add Plane Detais</h2>
+  <table class="table">
+    <thead>
+      <tr class="font-weight-bold">
+        <td>Name</td>
+        <td>Engeen</td>
+        <td>Model</td>
+        <td>Country</td>
+        <th> Update</th>
+        <!-- <th>Delete</th>
+        <th>Update</th>  -->
+      </tr>
+    </thead>
+    <tbody>
+
+      <tr *ngFor="let a of allData">
+        <td>{{a.plname}}</td>
+        <td>{{a.engine}}</td>
+        <td>{{a.model}}</td>
+        <td>{{a.countri}}</td>
+        
+        <td>
+          <!-- <button type="button" class="btn btn-outline-primary" (click)="editPlane(a)">Edit</button> -->
+
+       <button type="button" class="btn btn-outline-primary" (click)="deletePlane(a)">Delete</button></td>
+        
+      </tr>
+      <!-- <button type="button" (click)="updatePlane(planeForm.value)" class="btn btn-outline-primary">Update</button> -->
+    </tbody>
+
+    
+  </table>
+
+</div>
+
+  <div class="col-2">
+
+
+    </div>
+</div>
+</div>
